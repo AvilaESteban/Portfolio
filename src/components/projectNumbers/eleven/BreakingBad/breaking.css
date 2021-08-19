@@ -1,0 +1,208 @@
+.titulo:hover{
+     background-color:black;
+}
+
+@media (min-width:768px) {
+    .split {
+        display: flex;
+        flex-direction: row;
+        flex-grow:1;
+    }
+    
+    .split > * {
+        flex-basis: 100%;
+    }
+
+    .split > * + * {
+        margin-left: 2em;
+    }
+   
+}
+.fondoBreak{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #010c0b),
+    url(https://images.unsplash.com/photo-1542751371-adc38448a05e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+  background-position: center;
+  background-size: cover;
+}
+/* ---------------------------- */
+.figura:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #010c0b),
+    url(https://images.unsplash.com/photo-1517586979036-b7d1e86b3345?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fHBlb3BsZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  background-position: center;
+  background-size: cover;
+}
+
+/* ---------------------------- */
+/* card con imagen y datos Componente episodio*/
+
+.rt-profile-card-break {
+	max-width: 400px;
+	background-color: #FFF;
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+	background-position: center;
+	overflow: hidden;
+	position: relative;
+	margin: 10px auto;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+.rt-profile-card-break .full-width-break {
+	transition: all linear 0.25s;
+	width: 100%;
+	height: 100%;
+}
+
+.rt-profile-card-break .rt-profile-body-break {
+	position: absolute;
+	left: 30px;
+	right: 15px;
+	bottom: 0;
+	transition: all linear 0.25s;
+}
+
+.rt-profile-card-break  .rt-profile-name-break  {
+	font-size: 30px;
+	line-height: 1;
+	color: #FFF;
+	text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+	font-weight: bold;
+	position: relative;
+	transition: all 400ms ease-out;
+	text-transform: uppercase;
+}
+
+.rt-profile-card-break  .rt-profile-text-break  {
+	visibility: hidden;
+	opacity: 0;
+	font-size: 16px;
+	line-height: 1.4;
+	color: #FFF;
+	text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+	margin-top: 10px;
+	height: unset;
+	transition: all linear 0.25s;
+}
+
+.rt-profile-card-break :hover .rt-profile-body-break  {
+	bottom: 30px;
+}
+
+.rt-profile-card-break :hover .rt-profile-name-break  {
+	color: #ffc920;
+}
+
+.rt-profile-card-break  .rt-profile-name-break ::before,
+.rt-profile-card-break  .rt-profile-name-break ::after {
+	content: "";
+	display: inline-block;
+	background: #fff;
+	border-radius: 20px;
+	width: 120px;
+	height: 2px;
+	margin-right: 0;
+	margin-left: 0;
+	transition: all 250ms ease-in;
+}
+
+.rt-profile-card-break  .rt-profile-name-break ::before {
+	position: absolute;
+	left: 0;
+	top: -7px;
+	transform: translateX(0);
+}
+
+.rt-profile-card-break  .rt-profile-name-break ::after {
+	position: absolute;
+	left: 0;
+	bottom: -7px;
+	transform: translateX(-200px);
+}
+
+.rt-profile-card-break :hover .rt-profile-name-break ::before {
+	content: "";
+	background: #ffc920;
+	transform: translateX(-200px);
+}
+
+.rt-profile-card-break :hover .rt-profile-name-break ::after {
+	content: "";
+	background: #ffc920;
+	transform: translateX(0);
+}
+
+.rt-profile-card-break:hover .rt-profile-text-break  {
+	visibility: visible;
+	opacity: 1;
+	transition: all 400ms ease-out;
+	height: initial;
+}
+
+@media (max-width: 768px) {
+	.rt-profile-card-break .rt-profile-body-break {
+		bottom: 30px;
+	}
+	.rt-profile-card-break .rt-profile-text-break {
+		visibility: visible;
+		opacity:1;
+		height: initial;
+	}
+	.rt-profile-card-break .rt-profile-name-break::before {
+		display: none;
+	}   
+	.rt-profile-card-break .rt-profile-name-break::after {
+		position: absolute;
+		left: 0;
+		bottom: -7px;
+		transform: translateX(0);
+	}
+}
+
+/* ---------------------------- */
+/* Button */
+.btn{
+     border:2px solid black; 
+    background-color:orange;
+      font-weight:900;
+      padding:20px;
+      position:relative;
+     border-radius:5px;
+      cursor:pointer;
+       font-size:24px;
+     
+    }
+    
+    
+    
+    .btn:active::before{
+    
+     box-shadow:  inset 0px 0px 10px #7a96c2;
+    }
+    
+    /* button-1 left-slide*/
+    .btn.btn1::before{
+      top:0px;
+      bottom:0px;
+      right:0px;
+      left:0px;
+      width:100%;
+      height:100%;
+      position:absolute;
+      
+      z-index:-1;
+      content:'';
+      border-radius:5px;
+      transform:scaleX(0);
+      transform-origin:left;
+      transition: transform 600ms ease-in-out;
+      background-image:linear-gradient(180deg,#cde695,#63e0ac);
+      
+    }
+    .btn.btn1:hover::before,.btn.btn1:focus::before{
+        
+      transform:scaleX(1);
+    }
+    .btn.btn1:hover{
+      z-index:1;
+    
+    }

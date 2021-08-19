@@ -1,9 +1,11 @@
 import React from 'react';
+import FormTareas from '../one/lista-de-tareas/Index';
 
 const Project1 = () => {
+    
     return(
         <>
-         <h1>Project 1</h1>
+             <FormTareas/>
         </>
     )
 }

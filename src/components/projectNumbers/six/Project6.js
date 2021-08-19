@@ -1,9 +1,10 @@
 import React from 'react';
+import LandingPagePeluqueria from './landing-page-peluqueria';
  
 const Project6 = () => {
     return(
         <>
-          <h1>Project 6</h1>
+          <LandingPagePeluqueria/>
         </>
     )
 }

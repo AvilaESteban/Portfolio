@@ -1,0 +1,33 @@
+
+.valid{
+    border-color: green;
+}
+.invalid{
+    border-color: red;
+}
+
+.formulario{
+    margin:0 auto;
+    padding: 20px;
+    border: 1px solid gray;
+}
+
+@media (max-width: 768px) {
+   .formulario input{
+       width: 100%;
+   }
+}
+
+@media (max-width: 768px) {
+    .cita{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+ }
+ 
+.body-vet{
+background-image: url('https://images.unsplash.com/photo-1534361960057-19889db9621e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80');
+background-repeat: no-repeat;
+background-size: cover;
+}

@@ -1,23 +1,22 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
+import Navbar from "react-bootstrap/Navbar";
 
 const Header = () => {  
     return(
         <>
-           {/* <!-- navbar_section_start --> */}
-  <nav class="navbar navbar-expand-lg navbar-dark navbar-container">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"> </span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <Navbar bg="dark" variant="" expand="sm" >
+        <h7 className="text-light">Portfolio</h7>
+        <Navbar.Toggle aria-controls="" />
+        <Navbar.Collapse id="">
+  
         <ul class="navbar-nav m-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" >
             <NavLink
               exact={true}
               className='text-light '
-              to="/home"
+              to="/"
             >
               HOME
             </NavLink>
@@ -68,9 +67,8 @@ const Header = () => {
             </a>
           </li>
         </ul>
-      </div>
-    </div>
-  </nav>
+        </Navbar.Collapse>
+   </Navbar> 
         </>
     );
 }

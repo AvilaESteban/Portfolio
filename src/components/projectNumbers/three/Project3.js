@@ -1,9 +1,10 @@
 import React from 'react';
+import ApiSimpsons from './frases-simpsons';
 
 const Project3 = () => {
     return(
         <>
-           <h1>Project 3</h1>
+           <ApiSimpsons/>
         </>
     )
 }

@@ -1,9 +1,10 @@
 import React from 'react';
+import NoticiasHook from './web-noticias';
 
 const Project4 = () => {
     return(
         <>
-         <h1>Project4</h1>
+         <NoticiasHook/>
         </>
     )
 }

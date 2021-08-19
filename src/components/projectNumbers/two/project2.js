@@ -1,9 +1,10 @@
 import React from 'react';
+import PaletaColores from './paleta-de-colores';
 
 const Project2 = () => {
     return(
         <>
-          <h1>Project2</h1>
+          <PaletaColores/>
         </>
     )
 }
