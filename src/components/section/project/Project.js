@@ -5,8 +5,8 @@ import './project.css';
 const Project = () => {
     return(
         <>
-             {/* ---------------------- */}
- <h1 className="display-2 my-2 text-center text-dark"> Projects</h1>
+  <body className='body-project p-2'>          
+ <h1 className="display-2 my-2 text-center text-light"> Projects</h1>
  <div className="portfolio ">
   <a href="/project1" className="card-proj">
     <div className="content-proj">
@@ -132,7 +132,9 @@ const Project = () => {
   </a>
   
 </div>
-        <h1  className="display-6 p-2 text-center text-dark">thank you very much for seeing my projects</h1>
+        {/* <h2  className=" p-2 text-center text-light">thank you very much for seeing my projects</h2> */}
+
+        </body>
         </>
     )
 }

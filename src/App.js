@@ -19,9 +19,10 @@ import Project7 from "./components/projectNumbers/seven/Project7";
 import Project6 from "./components/projectNumbers/six/Project6";
 import Project3 from "./components/projectNumbers/three/Project3";
 import Project2 from "./components/projectNumbers/two/project2";
+import Cv from './components/section/education/CV/Cv';
 import About from "./components/section/about/About";
-import Contact from "./components/section/Contact";
-import Education from "./components/section/Education";
+import Contact from "./components/section/contact/Contact";
+import Education from "./components/section/education/Education";
 import Project from "./components/section/project/Project";
 import Galeria from '././././components/projectNumbers/nine/VacacionesCody/Galeria'
 import VacacionesCody from '././././components/projectNumbers/nine/VacacionesCody/Inicio'
@@ -92,6 +93,9 @@ function App() {
            </Route>
            <Route exact={true} path='/project9/inicio'>
               <VacacionesCody/>
+           </Route>
+             <Route exact={true} path='/education/cv'>
+              <Cv/>
            </Route>
          </Switch>
            {/* <!-- Navbar --> */}

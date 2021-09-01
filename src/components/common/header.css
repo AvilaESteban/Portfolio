@@ -1,0 +1,38 @@
+.platzi{
+    width: 60px;
+    height: 60px;
+    position: relative;;
+    margin-bottom: 10px auto;
+    transform: rotate(25deg);
+    animation-name: platzi-base;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+}
+
+
+.platzi-titulo{
+    margin-left: 20px;
+    color: white;
+    font-size: 25px;
+    font-family: verdana;
+    animation-name: platzi-titulo;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes platzi-titulo{
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: .5;
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+

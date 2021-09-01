@@ -1,0 +1,71 @@
+ .body-contact {
+    width: auto;
+    height: 600px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #010c0b),
+    url(https://images.unsplash.com/photo-1542751371-adc38448a05e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    color:white;
+  }
+
+  @media (max-width: 768px){
+    .body-contact {
+        height:auto;
+    }
+  }
+
+  .contact-info {
+    display: flex;
+  }
+  
+  .ul-contact {
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .ul-contact .li-contact {
+    list-style: none;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .circle-contact {
+    width: 50px;
+    height: 50px;
+    background: #2c8ec7;
+    border-radius: 50%;
+    margin-right: 15px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+  }
+
+  .circle-contact:hover {
+    background: black;
+  }
+  
+  /* Form */
+  .error{
+    color: red;
+    font-size: 12px;
+}
+
+.formvalid{
+    width: 300px;
+    margin: 0 auto;
+    padding:20px;
+    border: 1px solid gray;
+}
+
+.valid{
+    border-color: green;
+}
+.invalid{
+    border-color: red;
+}
+
+  

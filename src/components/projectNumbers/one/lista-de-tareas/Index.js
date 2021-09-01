@@ -72,13 +72,13 @@ const FormTareas = () => {
 
     return(
         <>
-        <div className='bodi'>
+        <div className='bodi text-center'>
           <Titulo/>
           <SubTitulo
               comision='Nueva'
               frase='Lista de Tareas'
           />
-          <div className='container p-2  '>
+          <div className='container p-2 text-center '>
              <form   className='form-group  p-2 my-2' onSubmit={handleSubmit}>
                 <input
                    className='form-group w-50'
@@ -100,7 +100,7 @@ const FormTareas = () => {
            {/* <a class="nav-link" > */}
             <NavLink
               exact={true}
-              className='text-light'
+              className='text-light '
               to="/project"
             >
               Atras?

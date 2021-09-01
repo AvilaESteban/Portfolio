@@ -5,6 +5,7 @@ import './about.css';
 const About = () => {
     return(
         <>
+ <body className='body-about p-1 '>
     <header>
       <img src={Img} alt="Zaid's Profile Picture" class="profile-image"/>
       <h1 className="tag name">Hi, I’m Esteban!</h1>
@@ -12,46 +13,27 @@ const About = () => {
       <p className="tag location"> <i class="fas fa-map-marker-alt"> </i>  Tucuman, Argentina!!</p>
     </header>
 
-    <main className="flex">
+    <main className="flex ">
       <div className="card">
         <h2><span class="bottom-border">About Me</span></h2>
 
-        <p className="text">I love designing things and, Web development has given me a reason 
-          to bring my artistic imagination to life. Building something and keeping 
-          in mind the final product is an immense motivation for me itself. I also 
-          feel proud of my work which, I didn't use to get much when I worked as a software tester.</p>
-        <p className="text">When I am not designing websites, I do cinematography and make short 
-          cinematic music videos on <a class="youtube" href="https://youtu.be/i18QgjDj94U" target="_blank"> YouTube</a>. It's very fulfilling for me and 
-          has given a creative-outlet to my avocation.</p>
+        <p className="text">Mi nombre es Esteban, soy de Tucuman, Argentina y me encuentro abocado a la busqueda de mi primer empleo IT, actualmente mi actividad principal no es la programaciòn ya que soy un especialista en protesis sobre implantes que luego de 10 años de profesion me planteè un nuevo gran desafio a mi vida y fuè la de aprender y estudiar programacion, por tal motivo, en octubre del año 2019 decidì comenzar un bootscamp donde de a poco fui familiarizandome con  cada lenguaje de programacion, aprendi a realizar proyectos, a trabajar en equipo con metodologias agil scrum, a implementar el uso de Github para subir los codigos de nuestra rama a dicha plataforma , a implementar el uso de trello para organizar las tareas y a diario realizabamos daily meeting para el seguimiento de cada proyecto con su posterior feedback por parte de nuestro mentor. A menudo, me surgia la incertidumbre de seguir o no con este abismal cambio pero luego con la pandemia que tuvimos que afrontar me llevo a la conclusiòn de que este es el camino correcto,</p>
 
       </div> 
 
       <div className="card">
-        <h2><span className="bottom-border">Goals</span></h2>
-        <p className="text">I would like to be able to expert in at least one of the technology stack. 
-          Get a nice job with a nice working environment. I also like to increase my performance in any work I do.
-        </p>
-         <ul className="skills"> 
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>Ruby</li>
-          <li>Rails</li>
-        </ul>
-        <p className="text">Also my goals is to do masters after few years of job and build some interesting 
-          applications under my belt to influence market.</p>
+        <p className="text">
+         lo cual, me motiva a seguir hasta que pueda cumplir mi objetivo de tener una oportunidad de formar parte de una empresa de software y de poder crecer junto a ella.
+        Hace poco, participe de un concurso para Mexico, "veranoFrontend", donde  aprendi a trabajar con codigos open source, a realizar  pull request y a contribuir como colaborador en dicho proyecto.Si bien, estoy capacitado para desempeñarme como full stack pero me gustaria comenzar a trabajar del lado del FrontEnd o como maquetador web por un tiempo. Por ultimo, solo queda spor decir que tengo toda la predisposicion y ganas de seguir creciendo y lograr que la futura empresa en la que trabaje,con el tiempo, sienta orgullo de que pertenezca a su equipo.</p>
       </div> 
 
     </main>
 
-        <footer>
-            <ul>
-              <li><a href="https://twitter.com/ZaidIrfanKhan" target="_blank" class="social twitter">Twitter</a></li>
-              <li><a href="https://www.linkedin.com/in/zaid-khan-9a4b964b/" target="_blank" class="social linkedin">LinkedIn</a></li>
-              <li><a href="https://github.com/ZaidKhan144" target="_blank" class="social github">Github</a></li>
-            </ul>
+        <footer className='text-center'>
             <p className="copyright">&copy; 2021, Avila Esteban</p>
           </footer>
+
+       </body>
         </>
     )
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import './header.css';
 import { NavLink } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 
@@ -6,7 +7,9 @@ const Header = () => {
     return(
         <>
         <Navbar bg="dark" variant="" expand="sm" >
-        <h7 className="text-light">Portfolio</h7>
+       
+		<div class="platzi-titulo">Portfolio</div>
+         
         <Navbar.Toggle aria-controls="" />
         <Navbar.Collapse id="">
   

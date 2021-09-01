@@ -3,8 +3,8 @@ import React from 'react';
 const SubTitulo = (props) => {
     return(
         <>
-          <p> Agregar tarea {props.comision}</p>
-           <h4 className='text-white '>{props.frase}</h4> 
+          <p className='text-center'> Agregar tarea {props.comision}</p>
+           <h4 className='text-white text-center'>{props.frase}</h4> 
         </>
     )
 }

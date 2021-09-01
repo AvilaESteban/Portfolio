@@ -68,7 +68,6 @@
           footer {
             font-size: 1.3em;
             max-width: 1200px;
-            margin: 40px auto;
           }
   }
   
@@ -186,3 +185,9 @@ a.social:hover {
 
 }
 
+.body-about{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), #010c0b),
+  url(https://images.unsplash.com/photo-1542751371-adc38448a05e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+  background-position: center;
+  background-size: cover;
+}
